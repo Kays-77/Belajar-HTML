@@ -1,3 +1,78 @@
-p {
-    color : red ; 
+body {
+    position :  relative;
+    isolation : isolate;
 }
+
+body ::before { 
+    content : "";
+    position : fixed;
+    inset : 0;
+
+    background : url(./img/Ayam.jpeg) 
+center/cover no-repeat;
+    opacity : 0.1;
+
+    z-index : -1;
+    pointer-events : none;
+}
+
+.navbar {
+    z-index : 2;
+    display : flex; 
+    align-items : center;
+    gap : 0;
+
+    background-color : rgb(255, 255, 255, 0.6);
+
+    padding : 10px;
+    margin : 0; 
+}
+
+.navbar a {
+    text-decoration : none;
+    color : black;
+    padding : 8px 16px;
+    border-right : 1px solid #999;
+}
+
+.navbar a:last-child {
+    border-right : none;
+}
+
+.dropbtn{
+    border : none;
+    background : none;
+    color : black;
+    font : inherit;
+    padding : 8px 16px;
+    cursor : pointer;
+    border-right : 1px solid #999;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content { 
+    display :  none; 
+    position : absolute;
+    min-width : 160px;
+    background-color: #f9f9f9;
+    border : none; 
+}
+
+.dropdown-content a { 
+    display : block;
+    padding : 12px 16px;
+    color : black;
+    box-sizing : border-box;
+    text-decoration : none;
+}
+
+.dropdown.dropdown-show .dropdown-content { 
+    display : block; 
+}
+
+

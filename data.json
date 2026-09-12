@@ -1,0 +1,19 @@
+{
+    "produk": [
+        {
+            "nama": "Daging ayam",
+            "harga": 50000,
+            "satuan": "kg"
+        },
+        {
+            "nama": "Daging sapi",
+            "harga": 100000,
+            "satuan": "kg"
+        },
+        {
+            "nama": "Daging babi",
+            "harga": 80000,
+            "satuan": "kg"
+        }
+    ]
+}
